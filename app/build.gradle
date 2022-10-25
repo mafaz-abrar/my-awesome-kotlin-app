@@ -41,7 +41,9 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.5.1'
 
     // Room Components
-    implementation 'androidx.room:room:room-ktx:2.3.0'
+    implementation 'androidx.room:room:room-ktx:2.4.3'
+    implementation 'androidx.room:room-common:2.4.3'
+    implementation 'androidx.room:room-ktx:2.4.3'
     kapt 'androidx.room:room-compiler:2.4.3'
     androidTestImplementation 'androidx.room:room-testing:2.4.3'
 
@@ -52,8 +54,8 @@ dependencies {
 
     // Kotlin Components
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:2.1.0'
-    api 'org.jetbrains.kotlinx:kotlinx-coroutines-core:2.1.0'
-    api 'org.jetbrains.kotlinx:kotlinx-coroutines-android:2.1.0'
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1'
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1'
 
     // UI Components
     implementation 'com.google.android.material:material:1.7.0'
