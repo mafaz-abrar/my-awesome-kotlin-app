@@ -28,11 +28,13 @@ interface WordDao {
     // The selected onConflict strategy ignores a new word
     // if it's exactly the same as an existing word
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    fun insert(word: Word)
+    suspend fun insert(word: Word)
 
+    // I was facing strange build errors since the imported Room library
+    // on the build file was using an outdated version
 
     // There is no annotation for deleting multiple entities,
     // so we use the generic query.
     @Query("DELETE FROM word_table")
-    fun deleteAll()
+    suspend fun deleteAll()
 }

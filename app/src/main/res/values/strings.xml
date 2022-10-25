@@ -2,5 +2,8 @@
     <string name="app_name">My Awesome Kotlin Project</string>
     <string name="author_name">Mafaz Abrar Jan Chowdhury</string>
     <string name="author_student_id">103172407</string>
-    <string name="add_word">+Add a word</string>
+    <string name="hint_word">Word...</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
+    <string name="add_word">Add word</string>
 </resources>
